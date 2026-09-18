@@ -2,9 +2,10 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "update-1-7-x", "update-1-7-104" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "update-1-7-x", "update-1-7-104" ]
+  workflow_dispatch:
 
 env:
   PROJECT_NAME: OBody
